@@ -1,1 +1,1 @@
-# whiteboard-demo2
+# npm i + npm start
