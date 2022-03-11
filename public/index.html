@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <title>Socket.IO whiteboard</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
-  <canvas class="whiteboard" ></canvas>
+  <canvas id="canvasss" class="whiteboard" style="position: absolute;"></canvas>
 
   <div class="colors">
     <div class="color black"></div>
@@ -15,6 +16,10 @@
     <div class="color green"></div>
     <div class="color blue"></div>
     <div class="color yellow"></div>
+    <input id="textInput" type="text">
+    <button id="submit">Draw text</button>
+    <button id="drawLine">Draw line</button>
+    <button id="eraserLine">Eraser line</button><br>
   </div>
 
   <script src="/socket.io/socket.io.js"></script>
